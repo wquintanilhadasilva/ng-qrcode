@@ -18,3 +18,9 @@
  <button class="btn" [class.btn-info]="!action.isStart" [class.btn-warning]="action.isStart" [disabled]="action.isLoading" (click)="handle(action, 'pause')">Pause</button>
  <button class="btn" [class.btn-info]="!action.isStart" [class.btn-warning]="action.isStart" [disabled]="action.isLoading" (click)="handle(action, 'stop')">Stop</button>
  <button class="btn" [class.btn-info]="!action.isStart" [class.btn-warning]="action.isStart" [disabled]="action.isLoading" (click)="action.download('gx-scanner-qrcode')">Cap</button>
+
+
+
+ <br/>
+
+ <qrcode [qrdata]="'XPTO DATA TO QR CODE'" [width]="256" [errorCorrectionLevel]="'M'"></qrcode>

@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 
 import { NgxScannerQrcodeModule } from 'ngx-scanner-qrcode';
 
+import { QRCodeModule } from 'angularx-qrcode';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -13,7 +15,8 @@ import { NgxScannerQrcodeModule } from 'ngx-scanner-qrcode';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgxScannerQrcodeModule
+    NgxScannerQrcodeModule,
+    QRCodeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

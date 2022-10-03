@@ -9,7 +9,7 @@ import { NgxScannerQrcodeService, SelectedFiles } from 'ngx-scanner-qrcode';
 export class AppComponent {
   title = 'qrcode';
 
-
+  qrdata = '';
 
   /**
    * Properties
